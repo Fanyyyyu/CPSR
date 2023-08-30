@@ -5,3 +5,5 @@ developed to detect the Change Points and achieve Sparsity Recovery (CPSR). The 
 and identifying significant covariates for varaible selection. Theoretical analyses confirm that the estimated proportions of structural breaks converge towards the true values with high probability. 
 Furthermore, this work also explores the asymptotic distribution of the post-lasso estimators of all regression parameters. The comprehensive Monte Carlo simulations showcase the efficacy of the 
 proposed methodology in finite sample scenarios, and a real data example is provided for illustration. The application has been coded into an R package named ``CPSR'' to facilitate wide use.
+
+\section{Installation}
