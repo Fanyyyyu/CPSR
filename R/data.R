@@ -18,7 +18,7 @@ dgp = function(T, P, p1, q, meanz, corZ, vare, eta_value, alpha1, alpha2, dgp_or
     x <- diag(rnorm(T, 0, 1), nrow = T, ncol = T )
     e <- vare * arima.sim(n = T, list(ar = 0.5), sd = sqrt(0.65))
   }else if  (dgp_order == 3) {
-    x <- diag(arima.sim(n = T, list(ar = 0.5)), nrow = T, ncol = T)
+    x <- diag(arima.sim(n = T, list(ar = 0.45)), nrow = T, ncol = T)
     e <- as.matrix(c(rnorm(T/2, 0, vare), rnorm(T/2, 0, 0.8)))
   }else if  (dgp_order == 4) {
     x <- diag(arima.sim(n = T, list(ar = 0.5)), nrow = T, ncol = T)
