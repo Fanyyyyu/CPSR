@@ -23,7 +23,7 @@ dgp = function(T, P, p1, q, meanz, corZ, vare, eta_value, alpha1, alpha2, dgp_or
   }else if  (dgp_order == 4) {
     x <- diag(arima.sim(n = T, list(ar = 0.5)), nrow = T, ncol = T)
     et <- rnorm(T, 0, 1)
-    e <- vare * garch.sim(alpha = c(0.05, 0.05), beta = 0.9, n = T) * et
+    e <- vare * garch.sim(alpha = c(0.15, 0.05), beta = 0.9, n = T) * et
   }else if  (dgp_order == 5) {
     x <- diag(arima.sim(n = T, list(ar = 0.5)), nrow = T, ncol = T)
     e <- 0.5 * arima.sim(n = T, list(ma = 0.5), sd = sqrt(0.8))
