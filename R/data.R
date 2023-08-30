@@ -12,7 +12,7 @@ dgp = function(T, P, p1, q, meanz, corZ, vare, eta_value, alpha1, alpha2, dgp_or
   eta <- as.matrix( c(rep(eta_value, p1), rep(0, P - p1)) )
 
   if (dgp_order == 1) {
-    x <- diag(arima.sim(n = T, list(ar = 0.4)), nrow = T, ncol = T)
+    x <- diag(arima.sim(n = T, list(ar = 0.5)), nrow = T, ncol = T)
     e <- as.matrix(rnorm(T, 0, vare))
   }else if  (dgp_order == 2) {
     x <- diag(rnorm(T, 0, 1), nrow = T, ncol = T )
